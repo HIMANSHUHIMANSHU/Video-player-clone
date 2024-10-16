@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="title-bar">
+      <img class="logo" src="VLC_icon.png" alt="vlc-logo">
+      <h1 class="label">VLC media player</h1>
+    
+    </div>
+
+
+    <div class=" menu-bar ">
+        <div class="menu">
+            <div class="menu-btn" id="videoBtn"> open </div>
+
+
+            <input type="file" id="videoInput" class="video-input">
+        </div>
+        <div class="menu">
+
+            <div class="menu-btn" id="playback">playback</div>
+
+        
+            <ul class="menu-items">
+              <li id="speedup"> speedup</li>
+              <li id="speeddown"> speeddown</li>
+            </ul>
+            
+            
+        </div> 
+        <div class="menu">
+
+            <div class="menu-btn" id="audio">audio</div>
+        
+            <ul class="menu-items">
+              <li id="volumeup">volume up</li>
+              <li id="volumedown">volume down</li>
+            </ul>
+            
+            
+        </div>
+
+    </div>
+
+
+ 
+
+  </header>
+  <main id="main"></main>
+  <div class="toast"></div>
+  <footer>
+    <div class="time">
+      <span id="current" >0:00</span>
+      /
+      <span  id="duration">0:00</span>
+      <div >
+        <div class="progressArea" id="video-progress-area">
+          <div class="progressBar" id="video-progress-bar"></div>
+
+        </div>
+
+
+      </div>
+      
+    </div>
+    
+    <i class="fa-solid fa-play" id="play"></i>
+    <i class="fa-solid fa-pause" id="pause"></i>
+    <i class="fa-solid fa-expand" id="fullScreen"></i>
+  </footer>
+  <script src="functions.js"></script>
+
+</body>
+
+</html>
